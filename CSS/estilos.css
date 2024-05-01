@@ -1,0 +1,407 @@
+/* NAVBAR */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: 'Syne';
+
+}
+
+header {
+  display: flex;
+  justify-content: right;
+  padding: 25px;
+}
+
+
+#menu ul {
+  list-style:none;
+  padding:0;
+  justify-content: space-between;
+  margin: 0 60px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+nav img {
+  width: 80px;
+  transition: transform 0.3s ease;
+}
+
+.logo {
+  margin-right: 800px;
+}
+
+#menu ul a {
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  font-size:25px;
+  padding:10px;
+  font-family:"syne";
+
+}
+  
+#menu ul li {
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0;
+  border-radius: 15px;
+}
+ 
+#menu ul li:hover {
+  background-color: none;
+}
+
+#menu ul li:hover > a {
+  color: yellow;
+}
+
+#menu ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  padding:0;
+}
+ 
+#menu ul ul li {
+  float:none;
+  width:150px;
+}
+  
+#menu ul ul a {
+  line-height:125%;
+  padding:10px 15px;
+  margin: 0 -60px;
+}
+  
+#menu ul li:hover > ul {
+  display:block;
+}
+
+
+nav img:hover {
+  transform: scale(1.6);
+}
+
+/*fin NAVBAR*/
+
+/*HOME*/
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor-imagen {
+  position: relative;
+  width: 100%;
+}
+
+.imagen-inicio{
+  width: 100%;
+  height: auto;
+  display: block; 
+}
+
+.texto-superpuesto {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+}
+
+.texto-superpuesto h1,
+.texto-superpuesto p,
+.texto-superpuesto button {
+  margin: 0;
+  padding: px;
+}
+
+.contenedor-imagenes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imagen1, .imagen2, .imagen3 {
+  text-align: center;
+}
+
+.imagen1 img, .imagen2 img, .imagen3 img {
+  width: 100%;
+}
+
+.info-home{
+  font-size: 20px;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #FFD600;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none; 
+  font-size: 18px; 
+  cursor: pointer;
+  font-family: 'syne'
+}
+
+h2{
+  margin: 30px;
+
+}
+
+.contenedor-imagenes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.imagen-artista {
+  text-align: center;
+  width: 15%; 
+}
+
+.imagen-artista img {
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 10px; 
+  transition: border-color 0.3s ease; 
+}
+
+.imagen-artista a {
+  color: white;
+  margin-top: 10px;
+  font-size: 18px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.imagen-artista:hover img {
+  border-color: yellow;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.logo-footer {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.logo-footer img {
+  width: 100px;
+}
+
+.footer-content {
+  margin-right: 100px; 
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+.footer-content button {
+  margin-right: 10px;
+  background-color: #FFD600;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.linea-amarilla {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: yellow;
+}
+
+/* fin FOOTER */
+
+/* HISTORIA */
+h1{
+  font-size: 50px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.content, .image {
+  flex-basis: calc(50% - 10px);
+}
+
+.image img {
+  max-width: 100%;
+  padding: 40px;
+}
+
+.texto-historia, .texto-historia2 {
+  padding: 10px;
+}
+
+.titulo1 {
+  margin:40px;
+  font-size:30px ;
+}
+
+.texto-historia, .texto-historia2 {
+  margin-bottom: 10px;
+  padding: 40px;
+}
+
+.futuristas-famosos{
+  width: 50%;
+}
+
+/*ARTISTAS */
+
+.titulo-artistas {
+  font-size: 40px;
+}
+/*CONTACTO */
+
+.contact_form{	
+	width: 460px; 
+  height: auto;
+  margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color: #ffffff; 
+  padding-left: 30px; 
+}
+
+
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: yellow; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: yellow; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: yellow; 
+	border-color: yellow; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+	color: #fff; 
+}
+
+
+span{
+	color: #000000; 
+}
+
+
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+
+
+h1{
+	font-size: 39px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: #000000;
+}
+
+
+h3{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #0e0e0e;   
+}
+
+
+p{
+	font-size: 14px; 
+	color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #a18e00;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #a18e00;
+}
+
