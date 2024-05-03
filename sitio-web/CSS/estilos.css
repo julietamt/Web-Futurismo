@@ -1,9 +1,9 @@
 /* NAVBAR */
-body {
+* body {
   margin: 0;
   padding: 0;
   background-color: black;
-  color: white;
+  color: white !important;
   font-family: 'Syne';
 
 }
@@ -19,7 +19,6 @@ header {
   list-style:none;
   padding:0;
   justify-content: space-between;
-  margin: 0 60px;
 }
 nav {
   display: flex;
@@ -32,7 +31,7 @@ nav img {
 }
 
 .logo {
-  margin-right: 800px;
+  margin-right: 700px;
 }
 
 #menu ul a {
@@ -76,8 +75,8 @@ nav img {
   
 #menu ul ul a {
   line-height:125%;
-  padding:10px 15px;
-  margin: 0 -60px;
+  padding:5px 10px;
+  margin: 0 -10px;
 }
   
 #menu ul li:hover > ul {
@@ -88,6 +87,14 @@ nav img {
 nav img:hover {
   transform: scale(1.6);
 }
+.info-home{
+  color: #ffffff;
+}
+.futurismo{
+  color: #ffffff;
+  font-weight: 800;
+  
+}
 
 /*fin NAVBAR*/
 
@@ -96,6 +103,12 @@ nav img:hover {
 body, html {
   margin: 0;
   padding: 0;
+  color: #ffffff;
+}
+
+.artistas{
+  color: #ffffff;
+  font-size: 18px;
 }
 
 .contenedor-imagen {
@@ -119,8 +132,8 @@ body, html {
 .texto-superpuesto h1,
 .texto-superpuesto p,
 .texto-superpuesto button {
-  margin: 0;
-  padding: px;
+  margin: 0 10px;
+  padding: -15px;
 }
 
 .contenedor-imagenes {
@@ -141,17 +154,17 @@ body, html {
 }
 
 button {
-  margin-top: 10px;
+  margin-top: 25px;
   background-color: #FFD600;
   color: rgb(0, 0, 0);
   border: none;
   border-radius: 6px;
-  padding: 10px 20px;
+  padding: 5px 30px;
   text-align: center;
   text-decoration: none; 
-  font-size: 18px; 
   cursor: pointer;
-  font-family: 'syne'
+  font-family: 'syne';
+  font-size: 18px;
 }
 
 h2{
@@ -217,6 +230,9 @@ footer {
 .footer-content p {
   margin-bottom: 10px;
 }
+.texto-footer{
+  color: #ffffff;
+}
 
 .footer-content button {
   margin-right: 10px;
@@ -262,6 +278,10 @@ h1{
 .texto-historia, .texto-historia2 {
   padding: 10px;
 }
+.color-texto{
+  color: #ffffff;
+  font-size: 20px;
+}
 
 .titulo1 {
   margin:40px;
@@ -274,7 +294,7 @@ h1{
 }
 
 .futuristas-famosos{
-  width: 50%;
+  width: 80%;
 }
 
 /*ARTISTAS */
@@ -282,7 +302,125 @@ h1{
 .titulo-artistas {
   font-size: 40px;
 }
- /*
- cambio para ver en git
- 
- */
+/*CONTACTO */
+
+.contact_form{	
+	width: 460px; 
+  height: auto;
+  margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color: #c4c4c4; 
+  padding-left: 30px; 
+}
+
+
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: yellow; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: yellow; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: yellow; 
+	border-color: yellow; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+	color: #fff; 
+}
+
+
+span{
+	color: #000000; 
+}
+
+
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+
+
+h1{
+	font-size: 39px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: #000000;
+}
+
+
+h3{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #000000;   
+}
+
+
+p{
+	font-size: 14px; 
+	color: #000000; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #a18e00;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #c7b000;
+}
