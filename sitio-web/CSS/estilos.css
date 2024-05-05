@@ -153,13 +153,13 @@ body, html {
   font-size: 20px;
 }
 
-button {
+button .ver-mas {
   margin-top: 25px;
   background-color: #FFD600;
   color: rgb(0, 0, 0);
   border: none;
   border-radius: 6px;
-  padding: 5px 30px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none; 
   cursor: pointer;
@@ -232,6 +232,8 @@ footer {
 }
 .texto-footer{
   color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .footer-content button {
@@ -240,7 +242,7 @@ footer {
   color: black;
   border: none;
   border-radius: 6px;
-  padding: 10px 20px;
+  padding: 5px 10px;
   cursor: pointer;
 }
 
@@ -252,6 +254,7 @@ footer {
   height: 1px;
   background-color: yellow;
 }
+
 
 /* fin FOOTER */
 
@@ -298,10 +301,39 @@ h1{
 }
 
 /*ARTISTAS */
-
-.titulo-artistas {
-  font-size: 40px;
+.contenedor-artista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
+
+.imagen-artista {
+  width: 20%;
+  margin-right: 30px;
+  margin-left: 18px;
+}
+
+.imagen-artista img {
+  width: 85%;
+  border-radius: 10px;  
+}
+
+.texto-artista {
+  width: 70%; /* Ajusta el tamaño según tu preferencia */
+}
+
+.texto-artista h2 {
+  color: white;
+  font-size: 28px;
+}
+
+.texto-artistas {
+  color: white;
+  font-size: 18px;
+  margin-right: 30px;
+}
+
 /*CONTACTO */
 
 .contact_form{	
@@ -423,4 +455,97 @@ p{
 .formulario textarea:focus{
 	outline:0;
 	border: 1px solid #c7b000;
+}
+
+
+
+/*GALERIA*/
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.image-galeria {
+  position: relative;
+  width: 30%;
+
+}
+
+.image-galeria img {
+  width: 100%;
+  height: 400px; /*  cambiar de acuerdo a la pc*/
+  object-fit: cover;
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.image-galeria:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* Estilos para el popup */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
