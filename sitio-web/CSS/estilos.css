@@ -284,7 +284,6 @@ footer {
 .texto-historia, .texto-historia2 {
   padding: 10px;
   color: #ffffff;
-  font-size: 24px;
 }
 
 .titulo1 {
@@ -299,6 +298,9 @@ footer {
 
 .futuristas-famosos {
   width: 60%;
+}
+.color-texto{
+  font-size: 20px;
 }
 
 /*ARTISTAS */
