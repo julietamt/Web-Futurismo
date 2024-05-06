@@ -153,7 +153,7 @@ body, html {
   font-size: 20px;
 }
 
-button .ver-mas {
+.ver-mas {
   margin-top: 25px;
   background-color: #FFD600;
   color: rgb(0, 0, 0);
@@ -193,7 +193,7 @@ h2{
 .imagen-artista a {
   color: white;
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 20px;
   list-style: none;
   text-decoration: none;
 }
@@ -259,36 +259,37 @@ footer {
 /* fin FOOTER */
 
 /* HISTORIA */
-h1{
-  font-size: 50px;
-}
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
 
 .content, .image {
   flex-basis: calc(50% - 10px);
+  text-align: center;
+}
+
+.content{
+  text-align: left;
 }
 
 .image img {
   max-width: 100%;
-  padding: 40px;
+  margin: 0 auto;
 }
 
 .texto-historia, .texto-historia2 {
   padding: 10px;
-}
-.color-texto{
   color: #ffffff;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .titulo1 {
-  margin:40px;
-  font-size:30px ;
+  margin: 40px;
+  font-size: 30px;
 }
 
 .texto-historia, .texto-historia2 {
@@ -296,16 +297,17 @@ h1{
   padding: 40px;
 }
 
-.futuristas-famosos{
-  width: 80%;
+.futuristas-famosos {
+  width: 60%;
 }
 
 /*ARTISTAS */
+
 .contenedor-artista {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .imagen-artista {
@@ -320,7 +322,7 @@ h1{
 }
 
 .texto-artista {
-  width: 70%; /* Ajusta el tamaño según tu preferencia */
+  width: 70%;
 }
 
 .texto-artista h2 {
@@ -335,7 +337,6 @@ h1{
 }
 
 /*CONTACTO */
-
 .contact_form{	
 	width: 460px; 
   height: auto;
@@ -343,7 +344,9 @@ h1{
 	border-radius: 10px;  
 	padding-top: 30px;
 	padding-bottom: 20px;  
-  background-color: #c4c4c4; 
+  background-color: #000000;
+  border-style: solid;
+  border-color: #ffffff;
   padding-left: 30px; 
 }
 
@@ -355,7 +358,7 @@ input{
 	border-radius: 5px;  
 	border-style: solid; 
 	border-width: 1px; 
-	border-color: yellow; 
+	border-color: rgb(0, 0, 0); 
 	margin-top: 10px;  
 	padding-left: 10px;
   margin-bottom: 20px; 
@@ -369,7 +372,7 @@ textarea{
 	border-radius: 5px;  
 	border-style: solid; 
 	border-width: 1px; 
-	border-color: yellow; 
+	border-color: rgb(0, 0, 0); 
 	margin-top: 10px;  
 	padding-left: 10px;
   margin-bottom: 20px; 
@@ -390,49 +393,47 @@ button{
 	margin-bottom: 20px; 
 	margin-top: 10px; 	
 	text-transform: uppercase;
-	background-color: yellow; 
-	border-color: yellow; 
-	border-style: solid; 
+	background-color: yellow;  
 	border-radius: 10px;	
-	width: 420px;   
+	width: 150px;   
   cursor: pointer;
 }
 
 
 button p{
-	color: #fff; 
+	color: #000000; 
 }
 
 
 span{
-	color: #000000; 
+	color: #ffffff; 
 }
 
 
 .aviso{
 	font-size: 13px;  
-	color: #0e0e0e;  
+	color: #f5f5f5;  
 }
 
 
 h1{
 	font-size: 39px;  
-	text-align: letf; 
+	text-align: left; 
 	padding-bottom: 20px; 
-	color: #000000;
+	color: #ffffff;
 }
 
 
 h3{
-	font-size: 16px; 
+	font-size: 20px; 
 	padding-bottom: 30px;
-	color: #000000;   
+	color: #ffffff;   
 }
 
 
 p{
-	font-size: 14px; 
-	color: #000000; 
+	font-size: 16px; 
+	color: #ffffff; 
 }
 
 
@@ -481,7 +482,7 @@ p{
 
 .image-galeria img {
   width: 100%;
-  height: 400px; /*  cambiar de acuerdo a la pc*/
+  height: 400px; 
   object-fit: cover;
   
 }
@@ -509,9 +510,10 @@ p{
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-/* Estilos para el popup */
+/* popup */
 .modal {
   display: none;
   position: fixed;
