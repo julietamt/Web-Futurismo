@@ -11,6 +11,26 @@
 </head>
 
 <body>
+<header>
+    <nav>
+      <div>
+        <a href="../sitio-web/index.html"> <img src="../sitio-web/imagenes/logo-pagina.png" alt="logo-pagina" class="logo"> </a>
+      </div>
+        <nav id="menu">
+          <ul>
+            <li><a href="../sitio-web/artistas.html">Artistas</a></li>
+            <li><a href="../sitio-web/historia.html">Historia</a>
+              <ul>
+                  <li><a href="../sitio-web/arquitectura.html">Arquitectura</a></li>
+                </ul>
+            </li>
+            <li><a href="../sitio-web/galeria.html">Galería</a></li>
+            <li><a href="../sitio-web/contacto.html">Contacto</a></li>
+            <li><a href="../sitio-web/form_registro.php">Registrate</a></li>
+         </ul>
+        </nav>
+    </nav>
+  </header>
 	<h2>Logueate</h2>
 	<form action="login.php" method="post">
     	<label>Nombre de usuario

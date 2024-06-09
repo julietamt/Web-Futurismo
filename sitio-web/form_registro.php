@@ -11,28 +11,53 @@
 </head>
 
 <body>
-	<h2 class="prueba" >Registrate en el sitio</h2>
-    <form action="registro.php" method="post" >
-    	<label>Nombre
-        	<input type="text" name="nombre" required />
-        </label><br />
-		<label>Apellido
-        	<input type="text" name="apellido" required />
-        </label><br />
-        <label>Email
-        	<input type="email" name="email" required />
-        </label><br />
-        <label>Nombre de usuario
-        	<input name="usuario" type="text" />
-        </label><br />
-        <label>Contraseña
-        	<input type="password" name="password" />
-        </label><br />
+<header>
+    <nav>
+      <div>
+        <a href="../sitio-web/index.html"> <img src="../sitio-web/imagenes/logo-pagina.png" alt="logo-pagina" class="logo"> </a>
+      </div>
+        <nav id="menu">
+          <ul>
+            <li><a href="../sitio-web/artistas.html">Artistas</a></li>
+            <li><a href="../sitio-web/historia.html">Historia</a>
+              <ul>
+                  <li><a href="../sitio-web/arquitectura.html">Arquitectura</a></li>
+                </ul>
+            </li>
+            <li><a href="../sitio-web/galeria.html">Galería</a></li>
+            <li><a href="../sitio-web/contacto.html">Contacto</a></li>
+            <li><a href="../sitio-web/form_registro.php">Registrate</a></li>
+         </ul>
+        </nav>
+    </nav>
+  </header>
+<div class="formulario-registrate">
+    <h1 class="prueba">¡Registrate!</h1>
+    <form action="registro.php" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" class="colocar_nombre" required />
+        <br />
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" class="colocar_apellido" required />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="email" required />
+        <br />
+        <label for="usuario">Nombre de usuario</label>
+        <input type="text" name="usuario" id="usuario" class="colocar_usuario" />
+        <br />
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password" class="password" />
+        <br />
         <label>
-            <input name="newsletter" type="checkbox" value="si" checked="checked" /> Sí, deseo recibir informacion por mail.
-        </label><br />
-        <input type="submit" value="Registrarse"/>	
+            <input type="checkbox" name="newsletter" value="si" checked="checked" />
+            Sí, deseo recibir informacion por mail.
+        </label>
+        <br />
+        <input type="submit" value="Registrarse" class="enviar" />
     </form>
+</div>
+
 
 </body>
 </html>

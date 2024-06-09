@@ -556,3 +556,98 @@ p{
 }
 
 
+/* Estilos de formulario */
+
+.formulario-registrate {
+  width: 460px;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario textarea {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin: 10px 0;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.formulario textarea {
+  height: 150px;
+  padding-top: 15px;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.formulario input[type="checkbox"] {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.formulario input[type="submit"] {
+  height: 45px;
+  width: 150px;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: yellow;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  color: #000;
+}
+
+.formulario .aviso {
+  font-size: 13px;
+  color: #f5f5f5;
+}
+
+.formulario h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.formulario h3 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.formulario p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Estilos de placeholders */
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  color: #a8a8a8;
+}
+
+/* Estilos de foco */
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #a18e00;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #c7b000;
+}
